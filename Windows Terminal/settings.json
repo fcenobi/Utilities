@@ -1,8 +1,8 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "defaultProfile":  "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-    "copyOnSelect":  false,
-    "copyFormatting":  false,
+    "copyOnSelect":  true,
+    "copyFormatting":  true,
     "profiles":  {
                      "defaults":  {
 
@@ -16,24 +16,29 @@
                                       "backgroundImageAlignment":  "bottomRight",
                                       "backgroundImageOpacity":  0.3,
                                       "backgroundImageStretchMode":  "none",
-                                      "startingDirectory":  "C:\\Desktop",
+                                      "startingDirectory":  "%USERPROFILE%",
                                       "useAcrylic":  true,
                                       "acrylicOpacity":  0.75,
-                                      "backgroundImage":  "ms-appdata:///roaming/Windows95.gif"
                                   },
                                   {
                                       "guid":  "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                                      "name":  "Командная строка",
+                                      "name":  "Riga di comando",
                                       "commandline":  "cmd.exe",
                                       "hidden":  false,
                                       "backgroundImageAlignment":  "bottomRight",
                                       "backgroundImageOpacity":  0.3,
                                       "backgroundImageStretchMode":  "none",
-                                      "startingDirectory":  "C:\\Desktop",
+                                      "startingDirectory":  "%USERPROFILE%",
                                       "useAcrylic":  true,
                                       "acrylicOpacity":  0.75,
-                                      "backgroundImage":  "ms-appdata:///roaming/Windows95.gif"
+                                      
                                   },
+                                  {
+                                      "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                                      "hidden": false,
+                                      "name": "Ubuntu-20.04",
+                                      "source": "Windows.Terminal.Wsl"
+                                  },                         
                                   {
                                       "guid":  "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                                       "name":  "Azure Cloud Shell",
@@ -83,5 +88,5 @@
                         }
                     ],
     "confirmCloseAllTabs":  false,
-    "showTabsInTitlebar":  false
+    "showTabsInTitlebar":  true
 }
